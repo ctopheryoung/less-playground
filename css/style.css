@@ -1,0 +1,85 @@
+/*************************
+Colors
+*************************/
+/*************************
+Mixins
+*************************/
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.clearfix {
+  display: block;
+  zoom: 1;
+}
+.clearfix:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/*************************
+Base Styles
+*************************/
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: Helvetica, Helvetica Neue, Arial;
+  font-size: 16px;
+  line-height: 26px;
+}
+header {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  zoom: 1;
+}
+header:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.header-container {
+  border-bottom: 20px solid #599a68;
+  background-color: #6ab47b;
+}
+.title {
+  color: #fff;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+nav a {
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  background: #6ab47b;
+}
+.main-container {
+  width: 90%;
+  margin: 0 auto;
+}
+footer {
+  width: 90%;
+  margin: 0 auto;
+}

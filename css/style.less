@@ -1,0 +1,97 @@
+/*************************
+Colors
+*************************/
+@colorLightGreen: #6ab47b;
+@colorDarkGreen: #599a68;
+@colorFont: #222;
+@colorTitle: #fff;
+
+
+/*************************
+Mixins
+*************************/
+.bottomBorder() {
+  border-bottom: 20px solid @colorDarkGreen;
+}
+
+.topBorder() {
+  border-top: 20px solid @colorDarkGreen;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.clearfix {
+  display: block;
+  zoom: 1;
+
+  &:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+/*************************
+Base Styles
+*************************/
+html {
+  color: @colorFont;
+  font-size: 1em;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Helvetica, Helvetica Neue, Arial;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+header {
+  .wrapper;
+  .clearfix;
+}
+
+.header-container {
+  .bottomBorder();
+  background-color: @colorLightGreen;
+}
+
+.title {
+  color: @colorTitle;
+}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: @colorTitle;
+    background: @colorLightGreen;
+  }
+}
+
+.main-container {
+  .wrapper;
+}
+
+footer {
+  .wrapper;
+}
